@@ -1,10 +1,5 @@
 ﻿using DotNet8.NLayerSample.DataAccess.Services;
 using DotNet8.NLayerSample.Models.Setup.Blog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DotNet8.NLayerSample.BusinessLogic.Services
 {
