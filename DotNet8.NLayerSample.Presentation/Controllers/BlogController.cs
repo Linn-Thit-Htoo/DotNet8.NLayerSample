@@ -60,7 +60,7 @@ namespace DotNet8.NLayerSample.Presentation.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBlog(int id)
         {
             try
