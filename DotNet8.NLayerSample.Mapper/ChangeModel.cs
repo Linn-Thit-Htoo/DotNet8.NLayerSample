@@ -5,6 +5,8 @@ namespace DotNet8.NLayerSample.Mapper;
 
 public static class ChangeModel
 {
+    #region Blog
+
     public static BlogModel Change(this Tbl_Blog dataModel)
     {
         return new BlogModel
@@ -25,4 +27,6 @@ public static class ChangeModel
             BlogContent = requestModel.BlogContent!
         };
     }
+
+    #endregion
 }
