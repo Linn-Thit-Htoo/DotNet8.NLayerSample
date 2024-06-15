@@ -1,4 +1,9 @@
-﻿namespace DotNet8.NLayerSample.Presentation.Services;
+﻿using DotNet8.NLayerSample.BusinessLogic.Services;
+using DotNet8.NLayerSample.DataAccess.Services;
+using DotNet8.NLayerSample.DbService;
+using Microsoft.EntityFrameworkCore;
+
+namespace DotNet8.NLayerSample.Presentation.Services;
 
 public static class ModularService
 {

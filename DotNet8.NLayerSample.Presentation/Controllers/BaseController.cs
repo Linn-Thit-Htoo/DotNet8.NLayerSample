@@ -1,6 +1,4 @@
-﻿using DotNet8.NLayerSample.Presentation.Resources;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace DotNet8.NLayerSample.Presentation.Controllers;
 
