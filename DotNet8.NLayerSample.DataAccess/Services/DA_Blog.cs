@@ -18,15 +18,13 @@ public class DA_Blog
     {
         try
         {
-            var lst = await _appDbContext.Blogs
-                .AsNoTracking()
+            var lst = await _appDbContext
+                .Blogs.AsNoTracking()
                 .OrderByDescending(x => x.BlogId)
                 .ToListAsync();
 
-            BlogListResponseModel responseModel = new()
-            {
-                DataLst = lst.Select(x => x.Change()).ToList()
-            };
+            BlogListResponseModel responseModel =
+                new() { DataLst = lst.Select(x => x.Change()).ToList() };
 
             return responseModel;
         }
@@ -53,10 +51,9 @@ public class DA_Blog
     {
         try
         {
-            var item = await _appDbContext.Blogs
-                           .AsNoTracking()
-                           .FirstOrDefaultAsync(x => x.BlogId == id)
-                       ?? throw new Exception("No Data Found.");
+            var item =
+                await _appDbContext.Blogs.AsNoTracking().FirstOrDefaultAsync(x => x.BlogId == id)
+                ?? throw new Exception("No Data Found.");
 
             if (!string.IsNullOrEmpty(requestModel.BlogTitle))
             {
@@ -86,10 +83,9 @@ public class DA_Blog
     {
         try
         {
-            var item = await _appDbContext.Blogs
-                           .AsNoTracking()
-                           .FirstOrDefaultAsync(x => x.BlogId == id)
-                       ?? throw new Exception("No Data Found.");
+            var item =
+                await _appDbContext.Blogs.AsNoTracking().FirstOrDefaultAsync(x => x.BlogId == id)
+                ?? throw new Exception("No Data Found.");
 
             _appDbContext.Remove(item);
 
