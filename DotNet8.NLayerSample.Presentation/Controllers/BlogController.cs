@@ -1,7 +1,6 @@
 ﻿using DotNet8.NLayerSample.BusinessLogic.Services;
 using DotNet8.NLayerSample.Models.Setup.Blog;
 using DotNet8.NLayerSample.Presentation.Resources;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNet8.NLayerSample.Presentation.Controllers
