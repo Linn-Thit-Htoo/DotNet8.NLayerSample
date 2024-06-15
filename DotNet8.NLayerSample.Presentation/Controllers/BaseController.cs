@@ -1,7 +1,5 @@
 ﻿using DotNet8.NLayerSample.Presentation.Resources;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Query;
 using Newtonsoft.Json;
 
 namespace DotNet8.NLayerSample.Presentation.Controllers
