@@ -1,6 +1,5 @@
 // Global using directives
 
-global using DotNet8.NLayerSample.BusinessLogic.Services;
-global using DotNet8.NLayerSample.DataAccess.Services;
-global using DotNet8.NLayerSample.DbService;
-global using Microsoft.EntityFrameworkCore;
+global using DotNet8.NLayerSample.Models.Setup.Blog;
+global using DotNet8.NLayerSample.Presentation.Resources;
+global using Microsoft.AspNetCore.Mvc;
