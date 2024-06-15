@@ -20,9 +20,9 @@ public static class ChangeModel
     {
         return new Tbl_Blog
         {
-            BlogTitle = requestModel.BlogTitle,
-            BlogAuthor = requestModel.BlogAuthor,
-            BlogContent = requestModel.BlogContent
+            BlogTitle = requestModel.BlogTitle!,
+            BlogAuthor = requestModel.BlogAuthor!,
+            BlogContent = requestModel.BlogContent!
         };
     }
 }
